@@ -3,7 +3,7 @@
 <ul class="card">
   <li>
     <input type="checkbox" name=""/>
-    <a href="show.html">Make the curriculum</a>
+   <a href="show/1">Make the curriculum</a>
     <span class="pomodoro-estimate">4 Pomodoros</span>
   </li>
   <li>
@@ -22,4 +22,18 @@
   <input class="text-input" id="new-todo-description" type="text" placeholder="Add a new todo...">
   <input class="text-input" id="new-pomodoro-estimate" type="number" placeholder="Pomodoro estimate...">
   <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
+</div>
+<ul class="card">
+<% @todos.each do |todo| %>
+  <li>
+    <input type="checkbox" name=""/>
+    <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
+
+    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  </li>
+<% end %>
+</ul>
+
+<div id="new-todo-block">
+<a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
 </div>
