@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Vacation Get Away</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="container">
+  <%= image_tag "sun.png" %>
+  <h1>Vacation Activity Log</h1>
+  <h5>"The sun's out, why aren't you?"</h5>
+</div>
 <%= yield %>
 
 </body>

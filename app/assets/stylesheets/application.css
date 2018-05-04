@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ body{
+   background-color:lightblue;
+   font-family:Pangolin;
+   font-size:30px;
+ }
+ #logo{
+   width:300px;
+ }
  ul{
   list-style: none;
   font-size: 20px;
@@ -41,4 +49,9 @@ span{
   background-color: #03A9F4;
   margin-top: 10px;
 }
-
+p{
+  font-size:100px;
+}
+a{
+  color:yellow
+}
